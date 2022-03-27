@@ -3,7 +3,7 @@
 let nota = parseInt(prompt("Ingrese su nota:"));
 while (nota >= 4) {
     alert("Bien aprobaste!");
-    nota=0;
+    nota = 0;
 }
 
 /*Calcular promedio con FOR*/
@@ -18,3 +18,20 @@ let promedio;
 promedio = suma / 3;
 
 alert(` Tu promedio es:${promedio}`);
+
+
+/*Bucle para ingresar notas hasta que se presiona calcelar*/
+do {
+
+    let nota = parseInt(prompt("Ingrese su nota:"));
+
+    if (nota > 0 && nota <= 10) {
+        if (nota < 4) {
+            alert("No probaste");
+        }
+        else{
+            alert("aprobaste");
+        }
+    }
+}
+while (nota != undefined);	
